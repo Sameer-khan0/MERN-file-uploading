@@ -9,6 +9,10 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 db()
+app.get('/',(req,res)=>{
+    res.json("Server is runnign")
+})
+
 app.use('/user',require('./routes/user'))
 app.use('/posts',require('./routes/posts'))
 
