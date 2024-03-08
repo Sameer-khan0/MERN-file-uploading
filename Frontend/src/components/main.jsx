@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './maincom.css';  // Import the CSS file
 import axios from 'axios';
 
-const FileUpload = () => {
+const FileUpload = (props) => {
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -22,7 +22,7 @@ const FileUpload = () => {
       // Set the button text to 'Loading...' during the upload
       document.getElementById('upload').innerHTML = 'Loading...';
   
-      await axios.post('http://localhost:4000/posts/upload', formData, {
+      await axios.post(props.url, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

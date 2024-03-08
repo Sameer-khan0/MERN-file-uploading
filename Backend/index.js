@@ -9,9 +9,11 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 db()
-// app.use('/user',require('./routes/user'))
+app.use('/user',require('./routes/user'))
 app.use('/posts',require('./routes/posts'))
 
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`)
 })
+
+module.exports = app;
