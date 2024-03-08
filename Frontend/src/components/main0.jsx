@@ -24,7 +24,7 @@ const FileUpload = (props) => {
   
       await axios.post(props.url, formData, {
         headers: {
-          'Content-Type': 'multipart/form-data',
+          // 'Content-Type': 'multipart/form-data',
         },
       });
   
