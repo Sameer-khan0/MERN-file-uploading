@@ -9,7 +9,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Main url='http://localhost:4000/posts/upload' />
-    <Main0 url='http://localhost:4000/posts/upload/img' />
+    <Main0 url='https://mern-file-uploading.vercel.app/posts/upload/img' />
     <Form url='http://localhost:4000/user/upload' />
   </React.StrictMode>,
 )
