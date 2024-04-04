@@ -1,6 +1,6 @@
 # MERN File Uploading Project
 
-This is a MERN (MongoDB, Express.js, React.js, Node.js) project that demonstrates file uploading functionality using Miller for handling file uploads to Cloudinary.
+This is a MERN (MongoDB, Express.js, React.js, Node.js) project that demonstrates file uploading functionality using Miller for handling file uploads to Cloudinary. 
 
 ## Table of Contents
 
